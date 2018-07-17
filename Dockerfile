@@ -14,7 +14,8 @@ COPY . /python_run/
 
 EXPOSE 5000
 
-RUN pip3 install Flask
+RUN pip3 install Flask\
+    gunicorn
 
 WORKDIR /python_run/
 
